@@ -1,0 +1,23 @@
+
+
+#cabecalho {
+    text-align: center;
+}
+
+#corpo{
+    margin: 20px;
+    text-align: justify;
+}
+
+#rodape{
+    text-align: center;
+    font-size: 50px;
+}
+
+#link1{
+    margin: 20px;
+}
+
+#link2{
+    margin: 20px;
+}
