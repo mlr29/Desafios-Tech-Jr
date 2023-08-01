@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Dia 03 - Formulário Hamburguer</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML - Dia 03</h1>
+        <p>Fazer um formulário de um pedido de hamburguer de restaurante</p>
+    </header>
+    <main class="hamburguer-form">
+        <form action="/page-for-processing-data" method="post">
+            <h2>Formulário de pedido - Hamburguer</h2>
+            <section class="contact-section">
+                <h3>Informações de contato</h3>
+                <div class="contact-information">
+                    <p>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="username">
+                    </p>
+                    <p>
+                        <label for="number">Usuário:</label>
+                        <input type="number" id="number" name="usernumber">
+                    </p>
+                    <p>
+                        <label for="address">Endereço:</label>
+                        <input type="text" id="addrees" name="user_address">
+                    </p>
+                </div>
+            </section>
+            <h3>Pedido</h3>
+            <section class="order-section">
+                <fieldset class="meat-order">
+                    <legend>Ponto da carne</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" id="point1" name="meat_point" value="mal-passado">
+                            <label for="point1">mal-passado</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="point2" name="meat_point" value="ao-ponto">
+                            <label for="point2">ao ponto</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="point3" name="meat_point" value="bem-passado">
+                            <label for="point3">bem-passado</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="bread-order">
+                <label for="bread">Tipo de pão:</label>
+                    <select name="type_bread" id="bread">
+                        <option value="american">Pão americano</option>
+                        <option value="italian">Pão italiano</option>
+                        <option value="brioche">Pão brioche</option>
+                        <option value="australian">Pão australiano</option>
+                    </select>
+                </div>
+                <fieldset class="salad-order">
+                    <legend>Opção de salada</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="op1" name="salad_option" value="lettuce">
+                            <label for="op1">alface</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="op2" name="salad_option" value="tomato">
+                            <label for="op2">tomate</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="op3" name="salad_option" value="onion">
+                            <label for="op3">cebola</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="op4" name="salad_option" value="olive">
+                            <label for="op4">azeitona</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <textarea name="comments" id="comments" cols="20" rows="5">Observações do pedido.</textarea>
+            </section>
+            <section class="submit-section">
+                <button type="submit">Enviar</button>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+@media (max-width: 500px) {
+    
+    .hamburguer-form{
+        width: 300px;
+    }
+
+    h2{
+        width: 300px;
+    }
+    
+    .order-section{
+        width:250px;
+    }
+}
