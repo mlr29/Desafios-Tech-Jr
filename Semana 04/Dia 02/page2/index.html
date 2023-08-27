@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dia 02</title>
+</head>
+
+<body>
+    <h1>Detalhe as informações dos personagens para uma batalha.</h1>
+    <main>
+        <form>
+            <section class="characters">
+                <div class="character1">
+                    <h2>Personagem 1</h2>
+                    <p>
+                        <label for="character1">Nome:</label>
+                        <input type="text" id="character1" name="name-character1">
+                    </p>
+                    <p>
+                        <label for="character1-atk">Poder de Ataque:</label>
+                        <input type="number" step="10" id="character1-atk" name="character1-atk">
+                    </p>
+                </div>
+
+                <div class="character2">
+                    <h2>Personagem 2</h2>
+                    <p>
+                        <label for="character2">Nome:</label>
+                        <input type="text" id="character2" name="name-character2">
+                    </p>
+                    <p>
+                        <label for="character2-hp">Pontos de vida:</label>
+                        <input type="number" step="10" id="character2-hp" name="character2-hp">
+                    </p>
+                    <p>
+                        <label for="character2-df">Pontos de defesa:</label>
+                        <input type="number" step="10" id="character2-df" name="character2-df">
+                    </p>
+
+                    <fieldset>
+                        <legend>Possui escudo?</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="op1" name="shield" value="yes">
+                                <label for="op1">Sim</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="op2" name="shield" value="not" checked>
+                                <label for="op2">Não</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+
+            <button id="submit" type="button">Enviar</button>
+        </form>
+
+        <div class="result">
+            <h2 class="dano">Dano: 1200 </h2>
+            <div class="result-characters">
+                <div class="result-char1">
+                    <h2 class="name-char1"> Coringa</h2>
+                    <div class="atk">Atk: 300</div>
+                </div>
+                <div class="result-char2">
+                    <h2 class="name-char2">Batman</h2>
+                    <div class="df">DF:</div>
+                    <div class="hp">HP:</div>
+                    <div class="shield">Shield:</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="./index.js"></script>
+
+</html>

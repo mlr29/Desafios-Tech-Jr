@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dia 02</title>
+</head>
+<body>
+    <h1>Informe nome e velocidade de dois carros quaisquer.</h1>
+    <form>
+        <section class="vehicles">
+            <div class="vehicle1">
+                <h2>Veículo 1</h2>
+                <p>
+                    <label for="vehicle1">Nome:</label>
+                    <input type="text" id="vehicle1" name="name-vehicle1">
+                </p>
+                <p>
+                    <label for="speed-vehicle1">Velocidade:</label>
+                    <input type="number" step="any" id="speed-vehicle1" name="speed-vehicle-1">
+                </p>   
+            </div>
+    
+            <div class="vehicle2">
+                <h2>Veículo 2</h2>
+                <p>
+                    <label for="vehicle2">Nome:</label>
+                    <input type="text" id="vehicle2" name="name-vehicle2">
+                </p>
+                <p>
+                    <label for="speed-vehicle2">Velocidade:</label>
+                    <input type="number" step="any" id="speed-vehicle2" name="speed-vehicle-2">
+                </p>   
+            </div>
+        </section>
+        
+        <button id="submit" type="button">Enviar</button>
+    </form>
+
+    <div class="result"></div>
+</body>
+<script src="./index.js"></script>
+</html>

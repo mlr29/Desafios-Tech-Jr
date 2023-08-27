@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dia 01</title>
+</head>
+<body>
+    <form>
+        <section class="form-header">
+            <h1>IFMA BCC - informações</h1>
+        </section>
+        
+        <section class="inputs">
+            <p>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name"/>
+            </p>
+    
+            <p>
+                <label for="last-name">Sobrenome: </label>
+                <input type="text" id="last-name" name="last-name"/>
+            </p>
+    
+            <p>
+                <label for="box-select">Campo de estudo:</label>
+                <select id="box-select" name="field-study">
+                    <option value="front-end">front-end</option>
+                    <option value="back-end">back-end</option>
+                    <option value="full-stack">full-stack</option>
+                    <option value="data-science">cientista de dados</option>
+                </select> 
+            </p>
+            
+            <p>
+                <label for="data">Data de nascimento:</label>
+                <input type="date" id="data" name="data-birth" />  
+            </p>
+            
+            <p>
+                <label for="registration">Número de matrícula:</label>
+                <input type="tel" id="registration" name="registration"/>
+            </p>
+        </section>
+        
+
+        <button id="send">Enviar</button>
+    </form>
+    
+    <a href="../page2/index.html"> Próximo desafio</a>
+    <script src="./index.js"></script>
+</body>
+</html>
